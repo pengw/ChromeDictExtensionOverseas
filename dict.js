@@ -13,7 +13,7 @@ function genericOnClick(info, tab) {
   };
   if (text.length == 0)
 	return;
-  chrome.windows.create({ url: 'http://dict.cn/' + text, width: 715, height: 750 });
+  chrome.windows.create({ url: 'http://dict.cn/' + text, width: 715, height: 735 });
 }
 
 chrome.contextMenus.create({"title": "Lookup '%s' in Dict.cn", "contexts": ["selection"], "onclick": genericOnClick});
